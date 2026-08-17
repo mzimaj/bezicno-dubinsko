@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  VAŽNO: zamijeni "https://TVOJA-DOMENA.hr" ispod sa stvarnom domenom
+  prije nego ovo prijaviš na Google Search Console. Dok domena nije
+  finalna (npr. dok je stranica na privremenom Vercel linku), ovaj
+  sitemap ne treba prijavljivati.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://TVOJA-DOMENA.hr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
