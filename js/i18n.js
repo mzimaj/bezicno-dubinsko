@@ -21,7 +21,6 @@ window.BD_TRANSLATIONS = {
     "hero.ctaMail": "E-mail",
     "hero.ctaSub": "Pogledaj cijene najma →",
     "hero.trust1": "Dvije baterije uključene",
-    "hero.trust2": "Bez struje i vode s tvoje strane",
     "hero.trust3": "Jednostavno korištenje",
 
     "about.eyebrow": "O nama",
@@ -136,7 +135,6 @@ window.BD_TRANSLATIONS = {
     "hero.ctaMail": "E-mail",
     "hero.ctaSub": "See rental prices →",
     "hero.trust1": "Two batteries",
-    "hero.trust2": "No power or water needed on your end",
     "hero.trust3": "Simple to use",
 
     "about.eyebrow": "About us",
