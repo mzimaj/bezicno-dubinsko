@@ -49,7 +49,7 @@ window.BD_TRANSLATIONS = {
     "pricing.price": "Cijena",
     "pricing.row1": "Radni dan (pon–pet)",
     "pricing.row2": "Vikend (subota, nedjelja)",
-    "pricing.note": "Uz najam se uzima povratni polog od 80 €, koji se vraća pri povratu uređaja u ispravnom stanju.",
+    "pricing.note": "Obavezan polog od 80 €, koji se vraća pri povratu uređaja u ispravnom stanju.",
 
     "steps.eyebrow": "Proces",
     "steps.title": "Najam u četiri jednostavna koraka.",
@@ -90,7 +90,9 @@ window.BD_TRANSLATIONS = {
 
 
     "testimonials.title": "Što kažu klijenti",
-    "testimonials.placeholder": "Mjesto rezervirano za sljedeću ocjenu.",
+    "testimonials.q1": "Uzeo sam ga prvenstveno za čišćenje auto sjedala i stvarno sam zadovoljan rezultatom. Lagan je, nema kabela i lako se koristi. Definitivno preporučujem.",
+    "testimonials.q2": "Brz dogovor i ljubazna ekipa. Sve preporuke!",
+    "testimonials.q3": "Kutna i tepisi su ispali odlično, a uređaj je jednostavan i praktičan za korištenje.",
 
     "faq.eyebrow": "Česta pitanja",
     "faq.title": "Prije nego pošalješ upit.",
@@ -163,7 +165,7 @@ window.BD_TRANSLATIONS = {
     "pricing.price": "Price",
     "pricing.row1": "Weekday (Mon–Fri)",
     "pricing.row2": "Weekend (Sat, Sun)",
-    "pricing.note": "A refundable deposit of €80 is taken with the rental and returned once the device comes back in good condition.",
+    "pricing.note": "A refundable deposit of €80 is required, returned once the device comes back in good condition.",
 
     "steps.eyebrow": "Process",
     "steps.title": "Renting in four simple steps.",
@@ -204,7 +206,9 @@ window.BD_TRANSLATIONS = {
 
 
     "testimonials.title": "What clients say",
-    "testimonials.placeholder": "Space reserved for the next review.",
+    "testimonials.q1": "I got it mainly to clean my car seats and I'm really happy with the results. It's lightweight, cordless and easy to use. Definitely recommend.",
+    "testimonials.q2": "Quick to arrange and a friendly team. Highly recommend!",
+    "testimonials.q3": "The corner sofa and rugs turned out great, and the device is simple and practical to use.",
 
     "faq.eyebrow": "Frequently asked questions",
     "faq.title": "Before you send a request.",
