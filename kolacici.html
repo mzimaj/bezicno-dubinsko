@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politika kolačića — Bežično dubinsko</title>
+<title data-i18n="cookies.title">Politika kolačića — Bežično dubinsko</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" href="images/favicon-180.png">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  (function(){
+    try{
+      var lang = localStorage.getItem('bd-lang') || 'hr';
+      document.documentElement.setAttribute('lang', lang);
+    }catch(e){}
+  })();
+</script>
 </head>
 <body>
 
@@ -18,17 +26,45 @@
   <div class="wrap header-inner">
     <a href="index.html" class="logo" aria-label="Bežično dubinsko — početna">
       <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="34" height="34">
-          <path d="M23 6c6 8 10 14.5 10 19.5a11 11 0 1 1-22 0C11 20.5 15 14 21 6z" fill="currentColor"/>
-          <path d="M2 14l9-3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".45"/>
-          <path d="M1 21l10-1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
-          <path d="M2 28l9 2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".45"/>
-        </svg>
+        <svg viewBox="0 0 40 40" width="34" height="34" fill="none">
+    <path
+      d="M20 4C16.5 9.2 10.5 15.3 10.5 22.5A9.5 9.5 0 0 0 20 32a9.5 9.5 0 0 0 9.5-9.5C29.5 15.3 23.5 9.2 20 4Z"
+      stroke="currentColor"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M15.5 23.5c1.2 2.6 3 3.9 5.5 4.1"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity=".55"
+    />
+    <path
+      d="M28.5 9.5l2-2"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity=".65"
+    />
+    <path
+      d="M31.5 14h2.8"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity=".45"
+    />
+  </svg>
       </span>
-      <span class="logo-word"><span class="logo-word-red">Dubinsko</span><br><span class="logo-word-blue">bežično</span></span>
+      <span class="logo-word"><span class="logo-word-red">Bežično</span><br><span class="logo-word-blue">dubinsko</span></span>
     </a>
     <div class="header-actions header-actions--simple">
-      <a href="index.html" class="btn btn-ghost">Natrag na početnu</a>
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Odabir jezika">
+        <button type="button" data-lang="hr">HR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="index.html" class="btn btn-ghost" data-i18n="legal.backHome">Natrag na početnu</a>
     </div>
   </div>
 </header>
@@ -36,33 +72,33 @@
 <main style="padding-top:76px">
   <section class="section">
     <div class="wrap wrap-narrow legal-page">
-      <p class="section-eyebrow">Pravne informacije</p>
-      <h1 class="section-title">Politika kolačića</h1>
-      <p class="legal-updated">Zadnje ažurirano: kolovoz 2026.</p>
+      <p class="section-eyebrow" data-i18n="legal.eyebrow">Pravne informacije</p>
+      <h1 class="section-title" data-i18n="cookies.h1">Politika kolačića</h1>
+      <p class="legal-updated" data-i18n="privacy.updated">Zadnje ažurirano: kolovoz 2026.</p>
 
-      <p>Ova stranica objašnjava koje kolačiće (cookies) i slične tehnologije koristi web stranica <strong>Bežično dubinsko</strong>.</p>
+      <p data-i18n-html="cookies.intro">Ova stranica objašnjava koje kolačiće (cookies) i slične tehnologije koristi web stranica <strong>Bežično dubinsko</strong>.</p>
 
-      <h2>1. Što su kolačići</h2>
-      <p>Kolačići su male tekstualne datoteke koje se spremaju na tvoj uređaj kad posjetiš web stranicu, a služe za pamćenje postavki, prepoznavanje uređaja ili prikupljanje statistike o korištenju.</p>
+      <h2 data-i18n="cookies.h2_1">1. Što su kolačići</h2>
+      <p data-i18n="cookies.p1">Kolačići su male tekstualne datoteke koje se spremaju na tvoj uređaj kad posjetiš web stranicu, a služe za pamćenje postavki, prepoznavanje uređaja ili prikupljanje statistike o korištenju.</p>
 
-      <h2>2. Trenutno stanje — ne koristimo kolačiće za analitiku ili marketing</h2>
-      <p>Ova stranica trenutno <strong>ne koristi</strong> Google Analytics, Facebook Pixel, oglašivačke kolačiće ni bilo kakve alate za praćenje ponašanja posjetitelja. Stranica je statična i namjerno jednostavna.</p>
+      <h2 data-i18n="cookies.h2_2">2. Trenutno stanje — ne koristimo kolačiće za analitiku ili marketing</h2>
+      <p data-i18n-html="cookies.p2">Ova stranica trenutno <strong>ne koristi</strong> Google Analytics, Facebook Pixel, oglašivačke kolačiće ni bilo kakve alate za praćenje ponašanja posjetitelja. Stranica je statična i namjerno jednostavna.</p>
 
-      <h2>3. Vanjski resursi koje učitavamo</h2>
-      <p>Fontovi (Inter i Space Grotesk) poslužuju se izravno s ove stranice, ne s Googleovih servera, pa njihovim učitavanjem ne dolazi do razmjene podataka s Googleom.</p>
-      <p>Na stranici s rezervacijom prikazujemo ugrađenu Google kartu (Google Maps) radi lakšeg snalaženja oko lokacije preuzimanja. Učitavanjem te karte tvoj preglednik uspostavlja izravnu vezu s Googleovim poslužiteljima, pri čemu Google može primiti tvoju IP adresu i druge tehničke podatke, neovisno o tome jesi li Google korisnik. Više o tome u <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleovoj politici privatnosti</a>.</p>
+      <h2 data-i18n="cookies.h2_3">3. Vanjski resursi koje učitavamo</h2>
+      <p data-i18n="cookies.p3a">Fontovi (Inter i Space Grotesk) poslužuju se izravno s ove stranice, ne s Googleovih servera, pa njihovim učitavanjem ne dolazi do razmjene podataka s Googleom.</p>
+      <p data-i18n-html="cookies.p3b">Na stranici s rezervacijom prikazujemo ugrađenu Google kartu (Google Maps) radi lakšeg snalaženja oko lokacije preuzimanja. Učitavanjem te karte tvoj preglednik uspostavlja izravnu vezu s Googleovim poslužiteljima, pri čemu Google može primiti tvoju IP adresu i druge tehničke podatke, neovisno o tome jesi li Google korisnik. Više o tome u <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleovoj politici privatnosti</a>.</p>
 
-      <h2>4. Obrazac za rezervaciju</h2>
-      <p>Kad pošalješ upit za najam putem obrasca na stranici, taj se zahtjev obrađuje preko <strong>Netlify Forms</strong> servisa. Ovo je jednokratno slanje podataka (POST zahtjev), ne kolačić koji ostaje spremljen na tvom uređaju.</p>
+      <h2 data-i18n="cookies.h2_4">4. Obrazac za rezervaciju</h2>
+      <p data-i18n-html="cookies.p4">Kad pošalješ upit za najam putem obrasca na stranici, taj se zahtjev obrađuje preko <strong>Netlify Forms</strong> servisa. Ovo je jednokratno slanje podataka (POST zahtjev), ne kolačić koji ostaje spremljen na tvom uređaju.</p>
 
-      <h2>5. Kolačići preglednika (tehnički nužni)</h2>
-      <p>Sama stranica ne postavlja vlastite kolačiće. Ako tvoj preglednik lokalno sprema postavke (npr. status izbornika), to ostaje u memoriji preglednika, ne u obliku klasičnog kolačića koji bi zahtijevao pristanak.</p>
+      <h2 data-i18n="cookies.h2_5">5. Kolačići preglednika (tehnički nužni)</h2>
+      <p data-i18n="cookies.p5">Sama stranica ne postavlja vlastite kolačiće. Ako tvoj preglednik lokalno sprema postavke (npr. status izbornika), to ostaje u memoriji preglednika, ne u obliku klasičnog kolačića koji bi zahtijevao pristanak.</p>
 
-      <h2>6. Ako se ovo promijeni</h2>
-      <p>Ako u budućnosti dodamo alate za analitiku (npr. za praćenje posjeta) ili marketinške kolačiće, ovu ćemo politiku ažurirati i, gdje je to zakonski potrebno, zatražiti tvoj pristanak prije njihove upotrebe (npr. putem banera za kolačiće).</p>
+      <h2 data-i18n="cookies.h2_6">6. Ako se ovo promijeni</h2>
+      <p data-i18n="cookies.p6">Ako u budućnosti dodamo alate za analitiku (npr. za praćenje posjeta) ili marketinške kolačiće, ovu ćemo politiku ažurirati i, gdje je to zakonski potrebno, zatražiti tvoj pristanak prije njihove upotrebe (npr. putem banera za kolačiće).</p>
 
-      <h2>7. Kontrola kolačića u tvom pregledniku</h2>
-      <p>Bez obzira na to koje kolačiće stranica koristi, u svakom pregledniku možeš pregledati, blokirati ili obrisati kolačiće kroz postavke privatnosti preglednika.</p>
+      <h2 data-i18n="cookies.h2_7">7. Kontrola kolačića u tvom pregledniku</h2>
+      <p data-i18n="cookies.p7">Bez obzira na to koje kolačiće stranica koristi, u svakom pregledniku možeš pregledati, blokirati ili obrisati kolačiće kroz postavke privatnosti preglednika.</p>
 
 
     </div>
@@ -73,10 +109,10 @@
   <div class="wrap footer-inner">
     <div class="footer-brand">
       <span class="logo-word"><span class="logo-word-red">Bežično</span> <span class="logo-word-blue">dubinsko</span></span>
-      <p>Iznajmi Kärcher SE 3-18 i operi auto ili tapeciranu površinu sam, bez struje i vode. Split i okolica.</p>
+      <p data-i18n="footer.desc">Iznajmi Kärcher SE 3-18 i operi auto ili tapeciranu površinu sam, bez struje i vode. Split i okolica.</p>
     </div>
     <div class="footer-col">
-      <h4>Kontakt</h4>
+      <h4 data-i18n="footer.contact">Kontakt</h4>
       <p><a href="tel:+385912345678">091 234 5678</a></p>
       <p><a href="mailto:dubinsko.st@gmail.com">dubinsko.st@gmail.com</a></p>
       <p class="footer-social-row">
@@ -89,23 +125,24 @@
       </p>
     </div>
     <div class="footer-col">
-      <h4>Radno vrijeme</h4>
-      <p>0–24</p>
+      <h4 data-i18n="footer.hours">Radno vrijeme</h4>
+      <p data-i18n="footer.hours1">0–24</p>
     </div>
     <div class="footer-col">
-      <h4>Područje</h4>
-      <p>Split i okolica</p>
+      <h4 data-i18n="footer.area">Područje</h4>
+      <p data-i18n="footer.areaVal">Split i okolica</p>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>© <span id="year"></span> Bežično dubinsko. Sva prava pridržana.</p>
+    <p>© <span id="year"></span> <span data-i18n="footer.rights">Bežično dubinsko. Sva prava pridržana.</span></p>
     <nav class="footer-legal" aria-label="Pravne informacije">
-      <a href="privatnost.html">Politika privatnosti</a>
-      <a href="kolacici.html">Politika kolačića</a>
+      <a href="privatnost.html" data-i18n="footer.privacy">Politika privatnosti</a>
+      <a href="kolacici.html" data-i18n="footer.cookies">Politika kolačića</a>
     </nav>
   </div>
 </footer>
 
 <script>document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());</script>
+<script src="js/i18n.js"></script>
 </body>
 </html>

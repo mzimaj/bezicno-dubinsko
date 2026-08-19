@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politika privatnosti — Bežično dubinsko</title>
+<title data-i18n="privacy.title">Politika privatnosti — Bežično dubinsko</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" href="images/favicon-180.png">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  (function(){
+    try{
+      var lang = localStorage.getItem('bd-lang') || 'hr';
+      document.documentElement.setAttribute('lang', lang);
+    }catch(e){}
+  })();
+</script>
 </head>
 <body>
 
@@ -18,17 +26,45 @@
   <div class="wrap header-inner">
     <a href="index.html" class="logo" aria-label="Bežično dubinsko — početna">
       <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="34" height="34">
-          <path d="M23 6c6 8 10 14.5 10 19.5a11 11 0 1 1-22 0C11 20.5 15 14 21 6z" fill="currentColor"/>
-          <path d="M2 14l9-3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".45"/>
-          <path d="M1 21l10-1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
-          <path d="M2 28l9 2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".45"/>
-        </svg>
+        <svg viewBox="0 0 40 40" width="34" height="34" fill="none">
+    <path
+      d="M20 4C16.5 9.2 10.5 15.3 10.5 22.5A9.5 9.5 0 0 0 20 32a9.5 9.5 0 0 0 9.5-9.5C29.5 15.3 23.5 9.2 20 4Z"
+      stroke="currentColor"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M15.5 23.5c1.2 2.6 3 3.9 5.5 4.1"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity=".55"
+    />
+    <path
+      d="M28.5 9.5l2-2"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity=".65"
+    />
+    <path
+      d="M31.5 14h2.8"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      opacity=".45"
+    />
+  </svg>
       </span>
-      <span class="logo-word"><span class="logo-word-red">Dubinsko</span><br><span class="logo-word-blue">bežično</span></span>
+      <span class="logo-word"><span class="logo-word-red">Bežično</span><br><span class="logo-word-blue">dubinsko</span></span>
     </a>
     <div class="header-actions header-actions--simple">
-      <a href="index.html" class="btn btn-ghost">Natrag na početnu</a>
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Odabir jezika">
+        <button type="button" data-lang="hr">HR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="index.html" class="btn btn-ghost" data-i18n="legal.backHome">Natrag na početnu</a>
     </div>
   </div>
 </header>
@@ -36,43 +72,43 @@
 <main style="padding-top:76px">
   <section class="section">
     <div class="wrap wrap-narrow legal-page">
-      <p class="section-eyebrow">Pravne informacije</p>
-      <h1 class="section-title">Politika privatnosti</h1>
-      <p class="legal-updated">Zadnje ažurirano: kolovoz 2026.</p>
+      <p class="section-eyebrow" data-i18n="legal.eyebrow">Pravne informacije</p>
+      <h1 class="section-title" data-i18n="privacy.h1">Politika privatnosti</h1>
+      <p class="legal-updated" data-i18n="privacy.updated">Zadnje ažurirano: kolovoz 2026.</p>
 
-      <p>Ova politika objašnjava koje osobne podatke prikupljamo putem stranice <strong>Bežično dubinsko</strong>, u koju svrhu, i koja su tvoja prava. Napisana je jednostavnim jezikom — ako nešto nije jasno, slobodno nas kontaktiraj.</p>
+      <p data-i18n-html="privacy.intro">Ova politika objašnjava koje osobne podatke prikupljamo putem stranice <strong>Bežično dubinsko</strong>, u koju svrhu, i koja su tvoja prava. Napisana je jednostavnim jezikom — ako nešto nije jasno, slobodno nas kontaktiraj.</p>
 
-      <h2>1. Voditelj obrade podataka</h2>
-      <p>Podaci prikupljeni putem ove stranice obrađuju se za potrebe obrta/tvrtke koja pruža uslugu najma uređaja "Bežično dubinsko", Split, Hrvatska. Kontakt za sva pitanja vezana uz privatnost: <a href="mailto:dubinsko.st@gmail.com">dubinsko.st@gmail.com</a>.</p>
+      <h2 data-i18n="privacy.h2_1">1. Voditelj obrade podataka</h2>
+      <p data-i18n-html="privacy.p1">Podaci prikupljeni putem ove stranice obrađuju se za potrebe obrta/tvrtke koja pruža uslugu najma uređaja "Bežično dubinsko", Split, Hrvatska. Kontakt za sva pitanja vezana uz privatnost: <a href="mailto:dubinsko.st@gmail.com">dubinsko.st@gmail.com</a>.</p>
 
-      <h2>2. Koje podatke prikupljamo</h2>
-      <p>Putem obrasca za rezervaciju termina prikupljamo:</p>
+      <h2 data-i18n="privacy.h2_2">2. Koje podatke prikupljamo</h2>
+      <p data-i18n="privacy.p2intro">Putem obrasca za rezervaciju termina prikupljamo:</p>
       <ul>
-        <li>ime i prezime,</li>
-        <li>broj telefona,</li>
-        <li>odabrani datum i termin preuzimanja,</li>
-        <li>trajanje najma i, ako je navedeno, planiranu upotrebu uređaja,</li>
-        <li>napomenu koju eventualno dodaš u polje za slobodan unos.</li>
+        <li data-i18n="privacy.li1">ime i prezime,</li>
+        <li data-i18n="privacy.li2">broj telefona,</li>
+        <li data-i18n="privacy.li3">odabrani datum i termin preuzimanja,</li>
+        <li data-i18n="privacy.li4">trajanje najma i, ako je navedeno, planiranu upotrebu uređaja,</li>
+        <li data-i18n="privacy.li5">napomenu koju eventualno dodaš u polje za slobodan unos.</li>
       </ul>
-      <p>Ne prikupljamo podatke o plaćanju putem ove stranice — plaćanje i eventualni polog dogovaraju se izravno prilikom preuzimanja uređaja.</p>
+      <p data-i18n="privacy.p2">Ne prikupljamo podatke o plaćanju putem ove stranice — plaćanje i eventualni polog dogovaraju se izravno prilikom preuzimanja uređaja.</p>
 
-      <h2>3. Svrha i pravna osnova obrade</h2>
-      <p>Podatke koristimo isključivo za obradu tvog upita za najam — kontaktiranje radi potvrde termina, dogovor oko preuzimanja i povrata uređaja, te eventualnu komunikaciju vezanu uz sam najam. Pravna osnova je poduzimanje koraka na tvoj zahtjev prije sklapanja ugovora (čl. 6(1)(b) Opće uredbe o zaštiti podataka).</p>
+      <h2 data-i18n="privacy.h2_3">3. Svrha i pravna osnova obrade</h2>
+      <p data-i18n="privacy.p3">Podatke koristimo isključivo za obradu tvog upita za najam — kontaktiranje radi potvrde termina, dogovor oko preuzimanja i povrata uređaja, te eventualnu komunikaciju vezanu uz sam najam. Pravna osnova je poduzimanje koraka na tvoj zahtjev prije sklapanja ugovora (čl. 6(1)(b) Opće uredbe o zaštiti podataka).</p>
 
-      <h2>4. Kome se podaci dijele</h2>
-      <p>Obrazac za rezervaciju tehnički obrađuje <strong>Netlify Forms</strong> (Netlify, Inc.), servis koji koristimo za primanje upita bez vlastitog servera. Podaci se ne prodaju niti dijele s trećim stranama u marketinške svrhe.</p>
+      <h2 data-i18n="privacy.h2_4">4. Kome se podaci dijele</h2>
+      <p data-i18n-html="privacy.p4">Obrazac za rezervaciju tehnički obrađuje <strong>Netlify Forms</strong> (Netlify, Inc.), servis koji koristimo za primanje upita bez vlastitog servera. Podaci se ne prodaju niti dijele s trećim stranama u marketinške svrhe.</p>
 
-      <h2>5. Koliko dugo čuvamo podatke</h2>
-      <p>Podatke iz obrasca čuvamo onoliko dugo koliko je potrebno za realizaciju najma i eventualnu naknadnu komunikaciju (uobičajeno do 12 mjeseci od upita), nakon čega se brišu, osim ako zakon zahtijeva dulje čuvanje (npr. računovodstvena dokumentacija).</p>
+      <h2 data-i18n="privacy.h2_5">5. Koliko dugo čuvamo podatke</h2>
+      <p data-i18n="privacy.p5">Podatke iz obrasca čuvamo onoliko dugo koliko je potrebno za realizaciju najma i eventualnu naknadnu komunikaciju (uobičajeno do 12 mjeseci od upita), nakon čega se brišu, osim ako zakon zahtijeva dulje čuvanje (npr. računovodstvena dokumentacija).</p>
 
-      <h2>6. Tvoja prava</h2>
-      <p>U skladu s Općom uredbom o zaštiti podataka (GDPR), imaš pravo zatražiti pristup svojim podacima, njihov ispravak, brisanje, ograničenje obrade, ili uložiti prigovor na obradu. Zahtjev možeš poslati na <a href="mailto:dubinsko.st@gmail.com">dubinsko.st@gmail.com</a>. Ako smatraš da su tvoja prava povrijeđena, imaš pravo podnijeti pritužbu <a href="https://azop.hr" target="_blank" rel="noopener">Agenciji za zaštitu osobnih podataka (AZOP)</a>.</p>
+      <h2 data-i18n="privacy.h2_6">6. Tvoja prava</h2>
+      <p data-i18n-html="privacy.p6">U skladu s Općom uredbom o zaštiti podataka (GDPR), imaš pravo zatražiti pristup svojim podacima, njihov ispravak, brisanje, ograničenje obrade, ili uložiti prigovor na obradu. Zahtjev možeš poslati na <a href="mailto:dubinsko.st@gmail.com">dubinsko.st@gmail.com</a>. Ako smatraš da su tvoja prava povrijeđena, imaš pravo podnijeti pritužbu <a href="https://azop.hr" target="_blank" rel="noopener">Agenciji za zaštitu osobnih podataka (AZOP)</a>.</p>
 
-      <h2>7. Kolačići</h2>
-      <p>Za detalje o kolačićima i sličnim tehnologijama koje stranica koristi, pogledaj našu <a href="kolacici.html">Politiku kolačića</a>.</p>
+      <h2 data-i18n="privacy.h2_7">7. Kolačići</h2>
+      <p data-i18n-html="privacy.p7">Za detalje o kolačićima i sličnim tehnologijama koje stranica koristi, pogledaj našu <a href="kolacici.html">Politiku kolačića</a>.</p>
 
-      <h2>8. Izmjene ove politike</h2>
-      <p>Ova politika može se povremeno ažurirati, npr. ako uvedemo nove alate ili funkcionalnosti. Datum zadnje izmjene naveden je na vrhu stranice.</p>
+      <h2 data-i18n="privacy.h2_8">8. Izmjene ove politike</h2>
+      <p data-i18n="privacy.p8">Ova politika može se povremeno ažurirati, npr. ako uvedemo nove alate ili funkcionalnosti. Datum zadnje izmjene naveden je na vrhu stranice.</p>
 
 
     </div>
@@ -83,10 +119,10 @@
   <div class="wrap footer-inner">
     <div class="footer-brand">
       <span class="logo-word"><span class="logo-word-red">Bežično</span> <span class="logo-word-blue">dubinsko</span></span>
-      <p>Iznajmi Kärcher SE 3-18 i operi auto ili tapeciranu površinu sam, bez struje i vode. Split i okolica.</p>
+      <p data-i18n="footer.desc">Iznajmi Kärcher SE 3-18 i operi auto ili tapeciranu površinu sam, bez struje i vode. Split i okolica.</p>
     </div>
     <div class="footer-col">
-      <h4>Kontakt</h4>
+      <h4 data-i18n="footer.contact">Kontakt</h4>
       <p><a href="tel:+385912345678">091 234 5678</a></p>
       <p><a href="mailto:dubinsko.st@gmail.com">dubinsko.st@gmail.com</a></p>
       <p class="footer-social-row">
@@ -99,23 +135,24 @@
       </p>
     </div>
     <div class="footer-col">
-      <h4>Radno vrijeme</h4>
-      <p>0–24</p>
+      <h4 data-i18n="footer.hours">Radno vrijeme</h4>
+      <p data-i18n="footer.hours1">0–24</p>
     </div>
     <div class="footer-col">
-      <h4>Područje</h4>
-      <p>Split i okolica</p>
+      <h4 data-i18n="footer.area">Područje</h4>
+      <p data-i18n="footer.areaVal">Split i okolica</p>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>© <span id="year"></span> Bežično dubinsko. Sva prava pridržana.</p>
+    <p>© <span id="year"></span> <span data-i18n="footer.rights">Bežično dubinsko. Sva prava pridržana.</span></p>
     <nav class="footer-legal" aria-label="Pravne informacije">
-      <a href="privatnost.html">Politika privatnosti</a>
-      <a href="kolacici.html">Politika kolačića</a>
+      <a href="privatnost.html" data-i18n="footer.privacy">Politika privatnosti</a>
+      <a href="kolacici.html" data-i18n="footer.cookies">Politika kolačića</a>
     </nav>
   </div>
 </footer>
 
 <script>document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());</script>
+<script src="js/i18n.js"></script>
 </body>
 </html>
